@@ -1,0 +1,21 @@
+.navbar .divider-vertical {
+    height: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-right: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+
+}
+
+.navbar-inverse .divider-vertical {
+    border-right-color: #f2f2f2;
+    border-left-color: #f2f2f2;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse .nav > .divider-vertical {
+        display: none;
+     }
+}

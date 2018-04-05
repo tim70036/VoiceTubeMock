@@ -19,19 +19,23 @@
 
 		<!-- My CSS -->
 		<link rel="stylesheet" type="text/css" href="css/subdropdown.css">
+		<link rel="stylesheet" type="text/css" href="css/divider-vertical.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
 
 	</head>
 
 	<body>
 		
-		<nav class="navbar navbar-inverse">
+		<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top:15px;">
 			<div class="container-fluid">
 
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#">WebSiteName</a>
+					<a class="navbar-brand" href="#">
+						<img src="https://cdn.voicetube.com/assets/img/vt_logo-with_icon-170111-white.png" style="height: 28px; position: relative; top: -5px; width: auto;">
+					</a>
 				</div>
 
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav navbar-left navleft">
 					
 					<!-- 精選頻道 -->
 					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">精選頻道<span class="caret"></span></a>
@@ -151,8 +155,10 @@
 					<!-- 社群 -->
 					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">社群<span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">激勵牆</a></li>
-						<li><a href="#">翻譯社群</a></li>
+						
+						<!-- With Icon -->
+						<li><a href="#"><span class="glyphicon glyphicon-th">激勵牆</span></a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-user">翻譯社群</span></a></li>
 						<li><a href="#">VoiceTube Campus</a></li>
 					</ul>
 					</li>
@@ -163,9 +169,43 @@
 
 
 					<!-- HERO 課程 -->
-					<li class="divider"></li>
+					<li class="divider-vertical"></li>
 					<li><a href="#">HERO 課程</a></li>
 
+				</ul>
+
+
+				<!-- 右側 icon 列 -->
+				<ul class="nav navbar-nav navbar-right">
+
+					<!-- 好友 icon -->
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span></a>
+					<ul class="dropdown-menu">
+						<span style="margin-left: 6px">好友邀請</span><span style="margin-right: 6px">
+					</ul>
+
+					<!-- 通知 icon -->
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-flag"></span></a>
+					<ul class="dropdown-menu">
+						<span style="margin-left: 6px">通知</span><span style="margin-right: 6px">
+					</ul>
+
+					<!-- 訊息 icon -->
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-comment"></span></a>
+					<ul class="dropdown-menu">
+						<span style="margin-left: 6px">訊息</span><span style="margin-right: 6px">
+					</ul>
+
+					<!--  icon -->
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-check"></span></a>
+					<ul class="dropdown-menu">
+						<span style="margin-left: 6px"></span><span style="margin-right: 6px">
+					</ul>
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-check"></span></a>
+					<ul class="dropdown-menu">
+						<span style="margin-left: 6px"></span><span style="margin-right: 6px">
+					</ul>
 				</ul>
 			</div>
 		</nav>
