@@ -1,3 +1,22 @@
 .navleft{
 	font-size: 30px;
 }
+
+.index-block .left-section {
+    min-height: 2000px;
+}
+
+.pull-left {
+    float: left;
+}
+
+.left-section > .category_header {
+    font-size: 28px;
+    margin: 25px auto;
+}
+
+.category_header {
+    color: #777;
+    font-size: 18px;
+    margin: 0 auto;
+}
