@@ -1,5 +1,5 @@
 .navleft{
-	font-size: 30px;
+	font-size: 16px;
 }
 
 .index-block .left-section {
@@ -20,3 +20,29 @@
     font-size: 18px;
     margin: 0 auto;
 }
+
+.nav-pad {
+	padding-bottom: 20px; 
+	padding-top:20px;
+}
+
+.img-logo {
+	height: 28px; 
+	position: relative; 
+	top: -5px; 
+	width: auto;
+}
+
+.left-margin{
+	margin-left: 10px;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Becauz we use navbar-fix-top */
+body { padding-top: 120px; }
