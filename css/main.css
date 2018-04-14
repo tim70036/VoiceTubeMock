@@ -1,12 +1,9 @@
-/* In order to make navbar collapse with bs grid */
-@media (max-width: 768px){
-   .collapse {
-       display: none !important;
-   }
-}
-
 .navleft{
 	font-size: 16px;
+}
+
+.navbar-right{
+    font-size: 10px;
 }
 
 .index-block .left-section {
@@ -41,7 +38,7 @@
 }
 
 .left-margin{
-	margin-left: 10px;
+	margin-left: 1px;
 }
 
 
