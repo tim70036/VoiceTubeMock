@@ -49,7 +49,7 @@ function onYouTubeIframeAPIReady() {
  }
 
 function onPlayerReady(event){
-  event.target.setVolume(0);
+  event.target.setVolume(50);
   //event.target.pauseVideo();
 
 }
