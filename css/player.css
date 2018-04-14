@@ -1,0 +1,184 @@
+.tab-content{
+	overflow:visible;
+
+}
+
+/*.mode-section {
+    overflow-y: hidden;
+    margin-left: 6px;
+    min-width: 312px;
+}
+*/
+
+#video-container {
+    padding-bottom: 0;
+    padding-left:0;
+    padding-right:0;
+    /*margin-top:90px;*/
+}
+.content-area {
+    padding-top: 22px;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tab-content{
+    overflow: visible;
+}
+
+
+
+.icon-play-circle::before {
+    content: "";
+    background-image: url('button.jpg');
+    background-size: 10px 20px;
+    width:10px;
+    height:20px;
+    display: block;
+}
+
+
+.top-area{
+    min-height: 762.078px;
+    display: block;
+    margin-top: -30px;
+	background:#3c3c3c url(https://cdn.voicetube.com/assets/img/header-bg.png) top left repeat-x;
+    margin-bottom: 10px;
+}
+
+#progress{
+    margin-top:20px;
+    margin-bottom: 0px;
+}
+
+.vt-progress-nav{
+    min-height: 40px;
+    font-weight: 700;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 10px 0;
+
+}
+
+.vt-progress-nav .vt-progress-nav-bar {
+    height: 4px;
+    left: 29px; 
+    width: 64px;
+    background-image: linear-gradient(92deg,#1ec9f7,#6b2ecc);
+    position: absolute;
+    bottom: -6px;
+    transition: all .3s ease-in;
+}
+
+.vt-progress-nav.white{
+    padding-left: 29px;
+    font-size: 30px;
+    opacity: 1;
+    color: #fff;
+}
+
+
+
+/*
+.player-section {
+    color: #fff;
+    height: 480px;
+}
+*/
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    margin-top: 0;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon-white {
+    color: #fff;
+}
+
+#caption_detail {
+    height: 312px;
+    overflow: hidden;
+    background-color: #e6e6e6;
+    margin-top: 5px;
+    padding: 0 5px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    line-height: 30px;
+    position: relative;
+    overflow-x: hidden; 
+    overflow-y: scroll;
+}
+
+.mode-section {
+    overflow-y: hidden;
+    margin-left: 6px;
+    /*min-width: 312px;*/ 
+    display: block;
+}
+
+.larger-section{
+    width: 45px;
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 270px;
+    cursor: pointer;
+    opacity: .3;
+
+}
+
+.larger-section:hover{
+    opacity: 1;
+}
+
+/*.col-sm-5{
+    width:47%;
+
+}*/
+
+td, th{
+    display: table-cell;
+
+}
+
+.fa-angle-double-right:before {
+    content: "\f101";
+    color: white;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.fa-angle-double-left:before {
+    content: "\f100";
+    color: white;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+
+
+
