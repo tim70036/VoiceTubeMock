@@ -1,6 +1,26 @@
 <?php
 
-$jcontent = <<<STRING
+$jAd = <<<STRING
+[{
+    "href" : "/lessons/71?apilang=zh_tw",
+    "title" : "每天堅持5分鐘，1個月後大不同！",
+    "company" : "EF English Live 提供"
+},{
+  "href" : "/lessons/44?apilang=zh_tw",
+  "title" : "【免費體驗】5分鐘檢測英文能力",
+  "company" : "VoiceTube 提供"
+},{
+  "href" : "/lessons/89?apilang=zh_tw",
+  "title" : "每天25分鐘，聽懂CNN",
+  "company" : "EF English Live 提供"
+},{
+  "href" : "/lessons/94?apilang=zh_tw",
+  "title" : "你知道錯在哪嗎？﹥﹥看答案",
+  "company" : "EF English Live 提供"
+}]
+STRING;
+
+$jContent = <<<STRING
 [{
     "data_video_id" : "ocUNn6KUN6k",
     "a_href" : "player.html?id=ocUNn6KUN6k&file=caption_ocUNn6KUN6k",
@@ -194,8 +214,8 @@ $jcontent = <<<STRING
 }]
 STRING;
 
-$contents = json_decode($jcontent);
-
+$contents = json_decode($jContent);
+$ads = json_decode($jAd);
 #var_dump($contents);
 ?>
 
@@ -503,20 +523,30 @@ print $thumbHtml;
 
 					<div class="col-xs-0 col-sm-0 col-md-3 col-lg-3">
 						<div class="qbox index-sidebar span3">
-      				<div id="ad"><a href="/lessons/?apilang=zh_tw">看更多</a></div>
-    					<h3>英文學習課程</h3>
+	      					<div id="ad"><a href="/lessons/?apilang=zh_tw">看更多</a></div>
+	    					<h3>英文學習課程</h3>
 							<div class="clearfix"></div>
-    					<div>
-       					<ol id="sidecol" class="shortlist">
-									<!--  use js to insert advertise -->
-             		</ol>
-    					</div>
-
-   					</div>
+	    					<div>
+	       						<ol id="sidecol" class="shortlist">
+								<!--  use php to insert advertise -->
+<?php
+$adHtml = '';
+foreach($ads as $ad)
+{
+	$adHtml .= '<li>';
+		$adHtml .= '<div>';
+			$adHtml .= '<a target="_blank" href="' . $ad->href . '">' . $ad->title . '</a>';
+			$adHtml .= '<div class="short_company">' . $ad->company . '</div>';
+		$adHtml .= '</div>';
+	$adHtml .= '</li>';
+}
+print $adHtml;
+?>
+	             				</ol>
+	    					</div>
+   						</div>
 					</div>
-
 				</div>
-				<script type="text/javascript" src="js/advertise.js"></script>
 			</div>
 		</div>
 	</body>
